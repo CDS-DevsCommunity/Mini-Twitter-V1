@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "MiniTwitter.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MiniTwitter.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MiniTwitter.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniTwitter.Application.dll": {}
+        }
+      },
+      "MiniTwitter.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MiniTwitter.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniTwitter.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MiniTwitter.Application/1.0.0": {
+      "type": "project",
+      "path": "../../core/MiniTwitter.Application/MiniTwitter.Application.csproj",
+      "msbuildProject": "../../core/MiniTwitter.Application/MiniTwitter.Application.csproj"
+    },
+    "MiniTwitter.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../core/MiniTwitter.Domain/MiniTwitter.Domain.csproj",
+      "msbuildProject": "../../core/MiniTwitter.Domain/MiniTwitter.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "MiniTwitter.Application >= 1.0.0",
+      "MiniTwitter.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\lTemp\\.nuget\\packages\\": {},
@@ -38,7 +76,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lTemp\\Desktop\\Coding\\cds-projects\\Mini-Twitter-V1\\Backend\\src\\core\\MiniTwitter.Application\\MiniTwitter.Application.csproj": {
+              "projectPath": "C:\\Users\\lTemp\\Desktop\\Coding\\cds-projects\\Mini-Twitter-V1\\Backend\\src\\core\\MiniTwitter.Application\\MiniTwitter.Application.csproj"
+            },
+            "C:\\Users\\lTemp\\Desktop\\Coding\\cds-projects\\Mini-Twitter-V1\\Backend\\src\\core\\MiniTwitter.Domain\\MiniTwitter.Domain.csproj": {
+              "projectPath": "C:\\Users\\lTemp\\Desktop\\Coding\\cds-projects\\Mini-Twitter-V1\\Backend\\src\\core\\MiniTwitter.Domain\\MiniTwitter.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
