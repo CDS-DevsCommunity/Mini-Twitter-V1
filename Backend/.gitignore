@@ -1,0 +1,42 @@
+# Build outputs
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+.vscode/
+
+# User files
+*.user
+*.suo
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment & secrets
+.env
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+
+# NuGet
+*.nupkg
+packages/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# JetBrains
+.idea/
+
+# Test results
+TestResults/
+coverage/

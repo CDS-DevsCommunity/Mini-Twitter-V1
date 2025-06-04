@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E88C2248-7260-498F-B0A2-ED7137591BF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{C8E5F41D-2F37-4802-AA10-E53FA8B7D097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTwitter.Application", "src\core\MiniTwitter.Application\MiniTwitter.Application.csproj", "{4B98EE26-B608-4AF2-B960-B3AB98011C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTwitter.Domain", "src\core\MiniTwitter.Domain\MiniTwitter.Domain.csproj", "{2F810A96-B6B8-493A-AA1F-6D4268E4EB83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{FFBA21CE-3463-4BEE-BBFA-52751FDD4C5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTwitter.Identity", "src\infrastructure\MiniTwitter.Identity\MiniTwitter.Identity.csproj", "{7F104B59-AA7E-4AE2-A804-FFBEEE62B4D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTwitter.Persistence", "src\infrastructure\MiniTwitter.Persistence\MiniTwitter.Persistence.csproj", "{0EB58758-7A7D-49BE-9C93-AB7509361887}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{493C3ADB-F672-42A4-837F-3D73C55111F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTwitter.WebApi", "src\presentation\MiniTwitter.WebApi\MiniTwitter.WebApi.csproj", "{AB38B6F7-427C-4EE6-B2DD-8EE6937A19A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B98EE26-B608-4AF2-B960-B3AB98011C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B98EE26-B608-4AF2-B960-B3AB98011C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B98EE26-B608-4AF2-B960-B3AB98011C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B98EE26-B608-4AF2-B960-B3AB98011C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F810A96-B6B8-493A-AA1F-6D4268E4EB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F810A96-B6B8-493A-AA1F-6D4268E4EB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F810A96-B6B8-493A-AA1F-6D4268E4EB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F810A96-B6B8-493A-AA1F-6D4268E4EB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F104B59-AA7E-4AE2-A804-FFBEEE62B4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F104B59-AA7E-4AE2-A804-FFBEEE62B4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F104B59-AA7E-4AE2-A804-FFBEEE62B4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F104B59-AA7E-4AE2-A804-FFBEEE62B4D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB58758-7A7D-49BE-9C93-AB7509361887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB58758-7A7D-49BE-9C93-AB7509361887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB58758-7A7D-49BE-9C93-AB7509361887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB58758-7A7D-49BE-9C93-AB7509361887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB38B6F7-427C-4EE6-B2DD-8EE6937A19A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB38B6F7-427C-4EE6-B2DD-8EE6937A19A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB38B6F7-427C-4EE6-B2DD-8EE6937A19A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB38B6F7-427C-4EE6-B2DD-8EE6937A19A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8E5F41D-2F37-4802-AA10-E53FA8B7D097} = {E88C2248-7260-498F-B0A2-ED7137591BF9}
+		{4B98EE26-B608-4AF2-B960-B3AB98011C26} = {C8E5F41D-2F37-4802-AA10-E53FA8B7D097}
+		{2F810A96-B6B8-493A-AA1F-6D4268E4EB83} = {C8E5F41D-2F37-4802-AA10-E53FA8B7D097}
+		{FFBA21CE-3463-4BEE-BBFA-52751FDD4C5F} = {E88C2248-7260-498F-B0A2-ED7137591BF9}
+		{7F104B59-AA7E-4AE2-A804-FFBEEE62B4D8} = {FFBA21CE-3463-4BEE-BBFA-52751FDD4C5F}
+		{0EB58758-7A7D-49BE-9C93-AB7509361887} = {FFBA21CE-3463-4BEE-BBFA-52751FDD4C5F}
+		{493C3ADB-F672-42A4-837F-3D73C55111F0} = {E88C2248-7260-498F-B0A2-ED7137591BF9}
+		{AB38B6F7-427C-4EE6-B2DD-8EE6937A19A3} = {493C3ADB-F672-42A4-837F-3D73C55111F0}
+	EndGlobalSection
+EndGlobal
